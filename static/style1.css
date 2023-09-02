@@ -1,0 +1,187 @@
+
+/*-------------------HEADER----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(179, 234, 239);  */
+}
+body{
+    color: red;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header{
+    height:80vh;
+    width:100vw;
+    display: flex;
+    align-items: flex-end;
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/static/headerIMG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav{
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:space-around ;
+    box-shadow: 0px 0px 80px black;
+}
+.marvel-logo{
+    height: 50px;
+    margin: auto 20px;
+}
+.items{
+    padding: 10px;
+    margin: auto 10px;
+}
+
+.item2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.input {
+    height: 35px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    color: rgb(22, 22, 33);
+    font-size: 16px;
+}
+
+.text-btn{
+    width: 25vw;
+}
+
+.submit-btn{
+    width: 10vw;
+}
+
+/*-------------------BODY----------------------*/
+.body-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716)100%, black), url(/static/comicBackground.jpg);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.hero-btn{
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+.hero-card{
+    position: relative;
+    width: 150px;
+    background: black;
+    padding: 15px;
+    margin: 20px 15px;
+    border-radius: 4px;
+}
+.hero-card img{
+    height: 80%;
+    width: 100%;
+}
+.hero-card h6{
+    color: white;
+    padding: 5px;
+    margin: 5px auto ;
+    font-size: 15px;
+}
+.popup{
+    width: 50vw;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%)  scale(0.1);
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.2s;
+    z-index: 10000;
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -44%) scale(1);
+}
+.popup img{
+    height: 175px;
+    border: 10px black solid;
+    border-radius: 50%;
+    position: absolute;
+    top:-60px;
+    left: 50px;
+}
+.popup h2{
+    font-size: 70px;
+    margin: 10px ;
+}
+.popup p{
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.popup button{
+    width: 200px;
+    height: 35px;
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+/*-------------------INDEX_PAGE----------------------*/
+.detail-div{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px 100px;
+}
+.detail-div img{
+    height: 70vh;
+    padding: 10px;
+    border-radius: 15px;
+}
+.detail-div h6{
+    padding: 10px;
+    margin: auto;
+    font-size: 100px;
+    color: white;
+}
+.detail-div p{
+    padding: 10px;
+    margin: auto;
+    font-size: 22px;
+    color: white;
+}
+.comics-list{
+    padding: 4px;
+    margin: auto;
+    font-size: 16px;
+    color: red;
+}
+.comics-list-h4{
+    font-size: 20px;
+}
+
+/*-------------------FOOTER----------------------*/
+.footer-container{
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

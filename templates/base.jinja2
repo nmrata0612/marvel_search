@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav">
+            <div class="nav-item item1">
+                <a href="/"><img src="/static/marvel_logoIMG.png" alt="MARVEL" class="marvel-logo"></a>
+            </div>
+            <div class="nav-item item2">
+                <form class="items" action="/search_result" method="POST">
+                    <input type="text" name="search_name" class="input text-btn" placeholder="search for heroes." />
+                    <input type="submit" class="input submit-btn" value="search">
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="body-container">
+        {% block body_container %}
+            <h1>BASE PAGE</h1>
+        {% endblock body_container %}
+    </div>
+
+
+    <footer class="footer-container">
+        <div>
+            <img src="/static/marvel_logoIMG.png" class="marvel-logo" alt="MARVEL_LOGO">
+        </div>
+    </footer> 
+</body>
+</html>

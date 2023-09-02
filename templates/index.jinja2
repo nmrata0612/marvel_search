@@ -1,0 +1,12 @@
+{% extends 'base.jinja2' %}
+
+{% block body_container %}
+    {% for hero in heroes %}
+        <a href="{{url_for('post_for_page', post_id=hero[0])}}" class="hero-btn">
+            <div class="hero-card">
+                    <img src="{{hero[2]}}">
+                    <h6>{{hero[1]}}</h6>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock body_container %}

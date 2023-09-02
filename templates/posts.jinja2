@@ -1,0 +1,18 @@
+{% extends 'base.jinja2' %}
+
+{% block body_container %}
+    <div class="detail-div">
+        <div>
+            <img src="{{thumbnail}}" class="hero-card-img" alt="pic">
+        </div>
+        <div>
+            <h6>{{name}}</h6>
+            <p>{{description}}</p>
+            <br>
+            <h4 class="comics-list-h4">COMICS:</h4>
+            {% for comic in comic_list%}
+                <h5 class="comics-list">{{comic}}</h5>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock body_container %}

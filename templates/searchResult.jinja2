@@ -1,0 +1,13 @@
+{% extends 'base.jinja2' %}
+
+
+{% block body_container %}
+    {% for search in search_result %}
+        <a href="{{url_for('post_for_page', post_id=search[0])}}" class="hero-btn">
+            <div class="hero-card">
+                    <img src="{{search[2]}}">
+                    <h6>{{search[1]}}</h6>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock body_container %}
